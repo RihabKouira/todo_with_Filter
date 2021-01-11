@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #d8955d, #7d95a8);
+}
+.App {
+  align-items: center;
+  font-size: calc(10px + 1vmin);
+  min-height: 15vh;
+}
+
+/* ToDoList.css */
+.center_list {
+  margin: auto;
+  width: 50%;
+}
+/* addToDo.css */
+.txtb {
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+  font-size: 18px;
+}
+.title {
+  display: flex;
+  min-height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+.addtodo {
+  margin: auto;
+  width: 50%;
+  border-bottom: 2px solid #000;
+  padding: 0 0 0 7px;
+  display: flex;
+  justify-content: space-between;
+}
+.radio_btn {
+  margin: auto;
+  width: 23%;
+  display: flex;
+  align-items: center;
+}
+.label_radio {
+  margin: 0 11px;
+  align-items: center;
+}
+/* ToDoItem.css */
+.Item {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 0 0 0 7px;
+  margin: 6px 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+.add_edit_btn,
+.edit2_btn,
+.complete_btn,
+.edit_btn,
+.delete_btn {
+  padding: 0.3rem;
+  color: white;
+  border: 2px none;
+  border-radius: 3px;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.edit2_btn {
+  color: white;
+  border: 2px none;
+  border-radius: 3px;
+  margin-left: 0rem;
+  cursor: pointer;
+  font-size: 1rem;
+  background: rgb(70, 70, 199);
+}
+.edit2_btn:hover {
+  background: rgb(9, 9, 155);
+}
+.add_edit_btn {
+  background: rgb(179, 184, 151);
+}
+.add_edit_btn:hover {
+  background: rgb(167, 168, 163);
+}
+.edit_btn {
+  background: rgb(70, 70, 199);
+}
+.edit_btn:hover {
+  background: rgb(9, 9, 155);
+}
+.complete_btn {
+  background: rgb(100, 216, 100);
+}
+.complete_btn:hover {
+  background: rgb(30, 134, 30);
+}
+.delete_btn {
+  background: #e24316;
+}
+.delete_btn:hover {
+  background: #852207;
+}
+.faPlus,
+.faCheck,
+.faEdit,
+.faTrash,
+.faUndo {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 560px) {
+  .addtodo,
+  .txtb {
+    width: 138px;
+  }
+  .select {
+    width: 80px;
+  }
+  .addtodo,
+  input::placeholder {
+    font-size: 14px;
+  }
+  .Item {
+    width: 180px;
+  }
+  .title {
+    font-size: 28px;
+  }
+}
